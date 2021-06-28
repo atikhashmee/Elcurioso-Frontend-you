@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&display=swap');
+*, *:after, *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+* {
+    margin:0;
+    padding:0;
+    border: 0 none;
+    position: relative;
+}
+a{
+    color: #92897a;
+    text-decoration: underline;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url('./img/landing_back.png');
+    background-size: cover;
+    background-color: #e2e2e287;
+}
+
+.deal-event-home-container::after, .great-deals::after, .food-menu:after, .home-three:after, .contact-us-home::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    pointer-events: none;
+    background: rgb(23 22 22 / 61%);
+}
+
+.custom-button {
+    padding: 19px;
+    width: 100%;
+    background-color: #FAAF3A;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-container {
+    height: 90vh;
+    width: 100%;
+}
+.home-page-top, .menu-home, .home-three {
+    width: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: green;
+    position: relative;
+}
+
+.home-three {
+    background: url(./img/book-100.jpg) !important;
+    height: calc(100vh - 0%);
+    color: #fff;
+}
+.home-three  .table-booking-content{
+    z-index: 1;
+    width: 50%;
+}
+.home-three  .table-booking-content .content-header{
+    width: 50%;
+    margin: 23px auto;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.home-three .table-booking-content  .booking-form{
+    width: 100%;
+    text-align: center;
+}
+.home-three .table-booking-content  .booking-form .custom-button{
+    width: 50%;
+}
+
+.home-page-bottom {
+    width: 100%;
+    height: 100%;
+}
+
+.text-line-index2 {
+    background: inherit;
+    width: 70%;
+    max-width: 40rem;
+    min-width: 300px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding-right: 4rem;
+    margin-bottom: .5rem;
+}
+ul.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none
+}
+ul.leaders li{
+    margin: 30px 0px;
+}
+ul.leaders li p{
+    font-weight: 600;
+    font-size: 20px;
+}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    margin-top: 7px;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: #E5E5E5;
+    font-size: 24px;
+}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: #E5E5E5;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.header-title-bar {
+    width: 100%;
+    position: relative;
+}
+
+.custom-form-control {
+    height: 56px;
+}
+
+
+/* footer start */
+.footer {
+    background-color: #0470B4;
+    padding: 50px;
+    color: #fff;
+}
+.footer .address-bar{
+    margin-top: 34px;
+}
+.footer .find-us svg{
+    color: #FAAF3A;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.footer .footer-headline h1{
+    text-transform: uppercase;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* footer end */
+
+/* contact us start */
+.contact-us-home-container{
+    height: 60vh;
+}
+.contact-us-home {
+    background: url('./img/contact-us-100.jpg') !important;
+    height: calc(100vh - 40%);
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+}
+.contact-us-home .contact-us-header h1 {
+    font-size: 82px;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.contact-us {
+    height: 90vh;
+    background: #E5E5E5;
+}
+.contact-us .header-title-bar {
+    margin: 41px 0;
+}
+.contact-us .header-title-bar .content-header{
+    width: 50%;
+    margin: 23px auto;
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 50px;
+}
+.contact-us .header-title-bar .content-header h2{
+    font-size: 50px;
+}
+.contact-us .header-title-bar .title-sub-header{
+    position: absolute;
+    font-size: 26px;
+    bottom: -20px;
+    line-height: 24px;
+    text-align: center;
+}
+.contact-us .header-title-bar .title-sub-header span{
+    display: block;
+}
+.contact-us .contact-us-sub-header{
+    font-size: 28px;
+    text-align: center;
+}
+.contact-us .contact-us-item-holder{
+    text-align: center;
+    font-weight: 600;
+}
+.contact-us .contact-us-item-holder .box{
+    background: #FAAF3A;
+    width: 15%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 7px;
+}
+.contact-us .contact-us-item-holder .box svg{
+    font-size: 30px;
+}
+/* contact us end */
+
+
+/* menu start */
+.food-menu{
+    height: 60vh;
+}
+.food-menu .menu-home {
+    background: url(./img/menu-100.jpg);
+    height: 100%;
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+}
+.food-menu .menu-home .food-menu-content {
+    z-index: 1;
+}
+.food-menu .menu-home .food-menu-content h1{
+    font-size: 73px;
+}
+.food-menu .menu-home .food-menu-content .custom-button{
+    border-color: #fff;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    border-radius: 34px;
+    width: 200px;
+}
+.food-menu .menu-home .food-menu-content .custom-button:first-child{
+    background: #fff;
+    color: #000;
+    border: 5px solid #fff;
+}
+.food-menu .menu-home .food-menu-content .custom-button:last-child{
+    background: inherit;
+}
+.image-header {
+    font-family: 'Architects Daughter', cursive;
+}
+.image-header h2{
+    font-size: 68px;
+}
+.image-header .middle-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.house-special {
+    font-size: 42px !important;
+}
+.vegetarian, .meat, .seafood{
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-bottom: 10px;
+}
+.vegetarian{
+    background: #37A541;
+    color: #fff;
+}
+.meat{
+    background: #FF1D25;
+    color: #fff;
+}
+.seafood{
+    background: #0470B4;
+    color: #fff;
+}
+.product-items , .product-items-1{
+    background: #E5E5E5;
+}
+.grils-special {
+    border: 3px solid #000;
+    margin-bottom: 20px;
+}
+.grils-special p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+.grils-special  .leaders{
+    width: 100% !important;
+    margin: 0 auto;
+}
+.grils-special ul.leaders li {
+    margin: 0px 0px !important;
+}
+.burger-speical {
+    padding: 30px;
+    border: 3px solid #000;
+    text-align: center;
+}
+.burger-speical .burger-special-inner{
+    width: 50%;
+    margin: 0 auto;
+}
+/* menu end */
+
+
+/* index start */
+.index-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.index-highlight .top-text{
+    flex-basis: 30%;
+}
+.index-highlight .navigation{
+    flex-basis: 10%;
+}
+.index-highlight .bottom-text {
+    flex-basis: 50%;
+}
+.home-page-top {
+    background: url(./img/index-back.jpg);
+    height: 100%;
+}
+.navigation {
+    width: 40%;
+}
+.navigation  a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navigation  .book-now-menu{
+    color: #000;
+}
+.bottom-text h3{
+    font-family: 'Architects Daughter', cursive;
+    color: #fff;
+    font-size: 90px;
+}
+
+.index-bottom-left, .index-bottom-middle, .index-bottom-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.index-bottom-left h3, .index-bottom-middle h3, .index-bottom-right h3{
+    color: #fff;
+    font-size: 37px;
+    font-family: 'Architects Daughter', cursive;
+} 
+.index-bottom-left .custom-button, .index-bottom-middle .custom-button, .index-bottom-right .custom-button{
+   width: 50%;
+   font-weight: 600;
+   font-size: 30px;
+} 
+.index-bottom-left {
+    background: #24B2A8;
+}
+.index-bottom-middle {
+    background: #37A541;
+}
+.index-bottom-right {
+    background: #9E17A5;
+}
+.featued-menu{
+    height: 400px;
+}
+
+.feature-row {
+    height: 100%;
+}
+
+.deal-events{
+    width: 100%;
+    padding-top: 50px;
+}
+.deal-events .header-title-bar {
+   margin-bottom: 20px;
+   font-family: 'Architects Daughter', cursive;
+}
+
+.custom-card{
+    position: relative;
+    width: 95%;
+    margin-left: 20px;
+}
+.custom-card .hot-item-tag{
+    position: absolute;
+    background: #FAAF3A;
+    top: 0;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+    color: #000;
+}
+.custom-card .hot-item-tag::before{
+    content: "";
+    position: absolute;
+    border-left: 0px solid #0000;
+    border-right: 2px solid #0000;
+    border-top: 0px solid #0000;
+    border-bottom: 2px solid #0000;
+    width: 50px;
+    height: 50px;
+    top: 100%;
+    left: 22%;
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background: rgb(0 0 0 / 8%);
+}
+.custom-card .hot-item-tag p{
+    transform: rotate(-30deg);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 22px;
+    text-align: center;
+}
+.deal-events .view-all-deals .custom-button {
+    width: 70%;
+    background: #fff;
+    border: 3px solid #FAAF3A;
+}
+.great-deals {
+    background: url('./img/landing-menu-back-100.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.great-deals .great-deals-inner{
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.great-deals .great-deals-inner .item-holder{
+    height: 100%;
+
+}
+.great-deals .great-deals-inner .item-holder .button-container{
+
+    width: 50%;
+}
+.great-deals .great-deals-inner .item-holder h1{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+}
+.great-deals .great-deals-inner .item-holder p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.great-deals .great-deals-inner .item-holder .custom-button-outline{
+    background: none !important;
+    margin-right: 10px;
+}
+/* index end */
+
+
+/* deal event start */
+.deal-event-home-container{
+    height: 60vh;
+}
+.deal-event-home {
+    background: url('./img/deals-100.jpg');
+    height: 100%;
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+}
+.deal-event-home .contact-us-header h1 {
+    font-size: 82px;
+    font-weight: 500;
+    z-index: 1;
+}
+/* deal event end */
+
+/* navbar start */
+.custom-navbar {
+    background: #0470B4;
+    height: 150px;
+}
+.custom-navbar .menu-wrapper{
+    width: 100%;
+}
+.custom-navbar .custom-navbar-logo{
+    margin: 0 auto;
+}
+.custom-navbar .navbar-nav{
+   width: 40%;
+   display: flex;
+   justify-content: space-around;
+}
+.custom-navbar .navbar-nav .nav-item .nav-link{
+   color: #fff;
+   font-size: 25px;
+   text-decoration: none;
+}
+.custom-navbar .right-menu .nav-item:last-child .nav-link{
+    color: #000;
+}
+/* navbar end */
